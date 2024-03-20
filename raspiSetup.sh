@@ -8,7 +8,7 @@ sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_spi 0
 
 # Instala herramientas y librerías necesarias
-sudo apt-get install -y python3 python3-pip i2c-tools
+sudo apt-get install -y python3 python3-pip i2c-tools screen
 
 # Habilita I2C
 sudo apt-get install -y python3-smbus
