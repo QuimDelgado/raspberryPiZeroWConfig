@@ -16,7 +16,9 @@ echo "dtparam=i2c_arm=on" | sudo tee -a /boot/config.txt
 echo "i2c-dev" | sudo tee -a /etc/modules
 
 # Instala bibliotecas de Python
-pip3 install RPi.GPIO spidev mfrc522 Pillow adafruit-circuitpython-ssd1306 flask gunicorn numpy
+pip3 install RPi.GPIO spidev mfrc522 Pillow numpy adafruit-circuitpython-ssd1306 flask gunicorn face_recognition
+
+sudo apt install python3-opencv
 
 # Reinicia para aplicar los cambios
 echo "Configuración completada, reiniciando en 10 segundos..."
