@@ -16,7 +16,7 @@ echo "dtparam=i2c_arm=on" | sudo tee -a /boot/config.txt
 echo "i2c-dev" | sudo tee -a /etc/modules
 
 # Instala bibliotecas de Python
-pip3 install RPi.GPIO spidev mfrc522 Pillow adafruit-circuitpython-ssd1306 flask gunicorn
+pip3 install RPi.GPIO spidev mfrc522 Pillow adafruit-circuitpython-ssd1306 flask gunicorn numpy
 
 # Reinicia para aplicar los cambios
 echo "Configuración completada, reiniciando en 10 segundos..."
